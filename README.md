@@ -10,27 +10,45 @@ To Run:
 
 .env file:
 
-DATABASE_URL=mongodb+srv://Ankan:example@swasthyacluster.omgunlj.mongodb.net/?retryWrites=true&w=majority
-PORT=3000
+#### DATABASE_URL=mongodb+srv://Ankan:example@swasthyacluster.omgunlj.mongodb.net/?retryWrites=true&w=majority 
+#### PORT=3000
+</br>
+
+## Routes
+
+### GET:
+</br>
+
+/users/getuser 
+</br>
+
+/:userId/level/:level (userId is the mongodb _id assigned to that user)
+</br>
 
 
-Routes
-
-GET 
-/users/getuser
-/:userId/level/:level
 /blogs/getblog
+</br>
+
 /comments/getcomment
+</br>
 
-POST 
+### POST: 
+</br>
+
 /users/postuser
-/comments/postcomment
-/blogs/postblog
+</br>
 
-Example:
+/comments/postcomment
+</br>
+
+/blogs/postblog
+</br>
+
+### Example:
 
 const user1 = new User({
   name: 'Ankan',
+  
   email: 'ankan@gmail.com',
   password: 'pas5867d123',
 });
