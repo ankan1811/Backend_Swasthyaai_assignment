@@ -57,12 +57,19 @@ const user1 = new User({
 const blog1 = new Blog({
   title: 'Blog Post',
   content: 'This is the content.',
-  user: user1._id, //mongodb _id assigned to the user who created the blog
+  user: user1._id,
+  </br>
+  //mongodb _id assigned to the user who created the blog</br>
 });
 
 
 const comment1 = new Comment({
   content: 'This is greatt!',
-  user: user1._id,  //mongodb _id assigned to the user who created the comment
-  blog: blog1._id,  //mongodb _id assigned to the blog on whoch it was commented
+  user: user1._id, 
+  </br>
+  //mongodb _id assigned to the user who created the comment
+  blog: blog1._id, 
+  </br>
+  //mongodb _id assigned to the blog on whoch it was commented
+  </br>
 });
