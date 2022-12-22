@@ -3,8 +3,10 @@
 ## The assignment follows the MVC pattern (Models-views-controllers)
 
 To Run:
-1.npm install
-2.npm start
+### 1.npm install
+
+### 2.npm start
+
 
 .env file:
 
@@ -33,7 +35,6 @@ const user1 = new User({
   password: 'pas5867d123',
 });
 
-await user1.save();
 
 const blog1 = new Blog({
   title: 'Blog Post',
@@ -41,7 +42,6 @@ const blog1 = new Blog({
   user: user1._id, //mongodb _id assigned to the user who created the blog
 });
 
-await blog1.save();
 
 const comment1 = new Comment({
   content: 'This is greatt!',
