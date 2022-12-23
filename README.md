@@ -2,7 +2,7 @@
 
 ## The assignment follows the MVC pattern (Models-views-controllers)
 
-To Run:
+### To Run:
 ### 1.npm install
 
 ### 2.npm start
